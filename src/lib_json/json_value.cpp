@@ -196,10 +196,10 @@ char const* Exception::what() const JSONCPP_NOEXCEPT { return msg_.c_str(); }
 RuntimeError::RuntimeError(JSONCPP_STRING const& msg) : Exception(msg) {}
 LogicError::LogicError(JSONCPP_STRING const& msg) : Exception(msg) {}
 JSONCPP_NORETURN void throwRuntimeError(JSONCPP_STRING const& msg) {
-  throw RuntimeError(msg);
+  //throw RuntimeError(msg);
 }
 JSONCPP_NORETURN void throwLogicError(JSONCPP_STRING const& msg) {
-  throw LogicError(msg);
+  //throw LogicError(msg);
 }
 
 // //////////////////////////////////////////////////////////////////
